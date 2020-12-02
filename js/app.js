@@ -163,7 +163,9 @@ async function renderPairPerformanceData()
 
   let headingElement =  document.createElement("h4");
 
-  headingElement.appendChild(document.createTextNode("60-Day Averages in USD"));
+  let headingContent = `${performanceDataLength}-Day Averages in USD`;
+
+  headingElement.appendChild(document.createTextNode(headingContent));
 
   statsDiv.appendChild(headingElement);
 
